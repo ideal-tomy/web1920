@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="学生団体カラクリのメンバー紹介">
+  <meta name="format-detection" content="telephone=no">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="学生団体カラクリ">
+  <meta property="og:title" content="Member | カラクリ">
+  <meta property="og:description" content="学生団体カラクリのメンバー紹介">
+  <meta property="og:url" content="https://example.com/member/">
+  <meta property="og:image" content="https://example.com/images/ogp.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Member | カラクリ">
+  <meta name="twitter:description" content="学生団体カラクリのメンバー紹介">
+  <meta name="twitter:image" content="https://example.com/images/ogp.png">
+  <title>Member | カラクリ</title>
+  <link rel="icon" href="../images/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="site-header" id="site-header">
+    <div class="container site-header__inner">
+      <a href="../index.html" class="site-header__logo">カラクリ</a>
+      <button type="button" class="site-header__menu-btn" data-menu-toggle aria-controls="site-nav" aria-expanded="false" aria-label="メニューを開く">
+        <span class="site-header__menu-label" data-menu-label-open>MENU</span>
+        <span class="site-header__menu-label site-header__menu-label--close" data-menu-label-close hidden>CLOSE</span>
+      </button>
+    </div>
+  </header>
+
+  <nav id="site-nav" class="site-nav" data-site-nav aria-label="メインメニュー" hidden>
+    <div class="site-nav__inner">
+      <ul class="site-nav__decor" data-placeholder="PND-009" aria-hidden="true">
+        <li class="site-nav__star site-nav__star--red"></li>
+        <li class="site-nav__star site-nav__star--yellow"></li>
+        <li class="site-nav__star site-nav__star--blue"></li>
+        <li class="site-nav__star site-nav__star--red2"></li>
+      </ul>
+      <ul class="site-nav__links">
+        <li><a href="../index.html#about" class="site-nav__link">About</a></li>
+        <li><a href="../news/index.html" class="site-nav__link">News</a></li>
+        <li><a href="index.html" class="site-nav__link">Member</a></li>
+        <li><a href="../index.html#contact" class="site-nav__link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main" class="page-main container">
+    <h1 class="page-main__title heading-en">Member</h1>
+    <p class="member-intro" data-placeholder="PND-012">
+      役割ごとにメンバーを紹介します。以下は仮データです。
+    </p>
+
+    <section class="member-group" aria-labelledby="group-representative">
+      <h2 id="group-representative" class="member-group__title">代表</h2>
+      <ul class="member-grid">
+        <li class="member-card">
+          <article class="member-card__inner">
+            <a href="honda.html" class="member-card__link">
+              <figure class="member-avatar">
+                <img
+                  src="../images/member/demo.jpg"
+                  alt="本田 晴喜"
+                  class="member-avatar__img"
+                  data-placeholder="PND-011"
+                  loading="lazy"
+                  width="360"
+                  height="360"
+                >
+              </figure>
+              <h3 class="member-card__name" data-placeholder="PND-012">本田 晴喜</h3>
+              <p class="member-card__role" data-placeholder="PND-012">代表</p>
+              <span class="member-card__more">続きを読む</span>
+            </a>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+    <section class="member-group" aria-labelledby="group-pr">
+      <h2 id="group-pr" class="member-group__title">広報</h2>
+      <ul class="member-grid">
+        <li class="member-card">
+          <article class="member-card__inner">
+            <figure class="member-avatar">
+              <img
+                src="../images/member/demo.jpg"
+                alt="山田 花子"
+                class="member-avatar__img"
+                data-placeholder="PND-011"
+                loading="lazy"
+                width="360"
+                height="360"
+              >
+            </figure>
+            <h3 class="member-card__name" data-placeholder="PND-012">山田 花子</h3>
+            <p class="member-card__role" data-placeholder="PND-012">SNS運用</p>
+          </article>
+        </li>
+        <li class="member-card">
+          <article class="member-card__inner">
+            <figure class="member-avatar">
+              <img
+                src="../images/member/demo.jpg"
+                alt="佐藤 太郎"
+                class="member-avatar__img"
+                data-placeholder="PND-011"
+                loading="lazy"
+                width="360"
+                height="360"
+              >
+            </figure>
+            <h3 class="member-card__name" data-placeholder="PND-012">佐藤 太郎</h3>
+            <p class="member-card__role" data-placeholder="PND-012">デザイン</p>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+    <section class="member-group" aria-labelledby="group-project">
+      <h2 id="group-project" class="member-group__title">企画</h2>
+      <ul class="member-grid">
+        <li class="member-card">
+          <article class="member-card__inner">
+            <figure class="member-avatar">
+              <img
+                src="../images/member/demo.jpg"
+                alt="鈴木 一郎"
+                class="member-avatar__img"
+                data-placeholder="PND-011"
+                loading="lazy"
+                width="360"
+                height="360"
+              >
+            </figure>
+            <h3 class="member-card__name" data-placeholder="PND-012">鈴木 一郎</h3>
+            <p class="member-card__role" data-placeholder="PND-012">イベント企画</p>
+          </article>
+        </li>
+        <li class="member-card">
+          <article class="member-card__inner">
+            <figure class="member-avatar">
+              <img
+                src="../images/member/demo.jpg"
+                alt="加藤 美咲"
+                class="member-avatar__img"
+                data-placeholder="PND-011"
+                loading="lazy"
+                width="360"
+                height="360"
+              >
+            </figure>
+            <h3 class="member-card__name" data-placeholder="PND-012">加藤 美咲</h3>
+            <p class="member-card__role" data-placeholder="PND-012">運営</p>
+          </article>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="site-footer">
+    <div class="container site-footer__inner">
+      <p class="site-footer__org">学生団体 カラクリ</p>
+      <nav class="site-footer__nav" aria-label="フッターナビ">
+        <a href="../index.html#about">About</a>
+        <a href="../news/index.html">News</a>
+        <a href="index.html">Member</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+      <p><small>&copy; Karakuri</small></p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js" defer></script>
+</body>
+</html>

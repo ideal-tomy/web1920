@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="学生団体カラクリの公式サイト。くらす・まち・うごく。">
+  <meta name="format-detection" content="telephone=no">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="学生団体カラクリ">
+  <meta property="og:title" content="カラクリ | 学生団体公式サイト">
+  <meta property="og:description" content="学生団体カラクリの公式サイト。くらす・まち・うごく。">
+  <meta property="og:url" content="https://example.com/">
+  <meta property="og:image" content="https://example.com/images/ogp.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="カラクリ | 学生団体公式サイト">
+  <meta name="twitter:description" content="学生団体カラクリの公式サイト。くらす・まち・うごく。">
+  <meta name="twitter:image" content="https://example.com/images/ogp.png">
+  <title>カラクリ | 学生団体公式サイト</title>
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header" id="site-header">
+    <div class="container site-header__inner">
+      <a href="index.html" class="site-header__logo">カラクリ</a>
+      <button type="button" class="site-header__menu-btn" data-menu-toggle aria-controls="site-nav" aria-expanded="false" aria-label="メニューを開く">
+        <span class="site-header__menu-label" data-menu-label-open>MENU</span>
+        <span class="site-header__menu-label site-header__menu-label--close" data-menu-label-close hidden>CLOSE</span>
+      </button>
+    </div>
+  </header>
+
+  <nav id="site-nav" class="site-nav" data-site-nav aria-label="メインメニュー" hidden>
+    <div class="site-nav__inner">
+      <ul class="site-nav__decor" data-placeholder="PND-009" aria-hidden="true">
+        <li class="site-nav__star site-nav__star--red"></li>
+        <li class="site-nav__star site-nav__star--yellow"></li>
+        <li class="site-nav__star site-nav__star--blue"></li>
+        <li class="site-nav__star site-nav__star--red2"></li>
+      </ul>
+      <ul class="site-nav__links">
+        <li><a href="#about" class="site-nav__link">About</a></li>
+        <li><a href="news/index.html" class="site-nav__link">News</a></li>
+        <li><a href="member/index.html" class="site-nav__link">Member</a></li>
+        <li><a href="#contact" class="site-nav__link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main">
+    <!-- Phase 1b: hero-scroll 内でスクロール連動アニメ（PND-001 素材差し替え時に係数調整） -->
+    <div class="hero-scroll" data-hero-scroll>
+      <section id="top" class="hero" data-hero aria-label="トップ">
+        <div class="hero__stage">
+          <div class="hero__blob hero__blob--yellow-top" data-blob="yellow-top" data-placeholder="PND-001" aria-hidden="true"></div>
+          <div class="hero__blob hero__blob--red-left" data-blob="red-left" data-placeholder="PND-001" aria-hidden="true"></div>
+          <div class="hero__blob hero__blob--red-right" data-blob="red-right" data-placeholder="PND-001" aria-hidden="true"></div>
+          <div class="hero__blob hero__blob--blue-bottom" data-blob="blue-bottom" data-placeholder="PND-001" aria-hidden="true"></div>
+
+          <div class="hero__center-reveal" data-hero-reveal aria-hidden="true">
+            <p class="hero__center-title">学生団体カラクリ</p>
+          </div>
+
+          <div class="hero__logo" data-hero-logo>
+            <!-- PENDING:PND-002 -->
+            <div class="hero__logo-grid" data-placeholder="PND-002" aria-hidden="true">
+              <span class="hero__logo-cell hero__logo-cell--red"></span>
+              <span class="hero__logo-cell hero__logo-cell--yellow"></span>
+              <span class="hero__logo-cell hero__logo-cell--blue"></span>
+              <span class="hero__logo-cell hero__logo-cell--red2"></span>
+            </div>
+            <p class="sr-only">カラクリ</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- PENDING:PND-007 -->
+    <section id="about" class="section section--about" aria-labelledby="about-heading">
+      <div class="container section__inner">
+        <h2 id="about-heading" class="section__title">学生団体カラクリ</h2>
+        <p class="section__lead" data-placeholder="PND-007">
+          私たちは、くらすまちの中で動き、出会い、つくっていく学生団体です。仮テキスト：毎日の動きを少し変えるだけで、いつものまちがちょっと違って見えてくる。
+        </p>
+        <p data-placeholder="PND-007">
+          仮テキスト：自分の得意や興味をたよりに活動し、まちでうごく人が増えることで、いろんな出会いと機会が生まれていくことを目指しています。
+        </p>
+      </div>
+    </section>
+
+    <!-- PENDING:PND-003 — News は microCMS（PND-010 で API 設定） -->
+    <section id="news" class="section section--news" aria-labelledby="news-heading">
+      <div class="section-wave section-wave--news-top" data-placeholder="PND-003" aria-hidden="true"></div>
+      <div class="container section__inner">
+        <h2 id="news-heading" class="section__title heading-en section__title--light">News</h2>
+        <ul
+          class="news-cards"
+          id="news-list"
+          data-news-list
+          data-news-limit="3"
+          data-news-detail-href="news/detail.html"
+        ></ul>
+        <p class="section__cta">
+          <a href="news/index.html" class="btn btn--light">一覧を見る</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- PENDING:PND-003, PND-007 -->
+    <section id="member" class="section section--member" aria-labelledby="member-heading">
+      <div class="section-wave section-wave--member-top" data-placeholder="PND-003" aria-hidden="true"></div>
+      <div class="container section__inner">
+        <h2 id="member-heading" class="section__title heading-en">Member</h2>
+        <p class="section__lead" data-placeholder="PND-007">
+          仮テキスト：多様なメンバーが、それぞれの専門性や趣味性を活かして有機的につながり、自主的に活動しています。
+        </p>
+        <p class="section__cta">
+          <a href="member/index.html" class="btn btn--dark">メンバー紹介</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- PENDING:PND-003 -->
+    <section id="sns" class="section section--sns" aria-labelledby="sns-heading">
+      <div class="section-wave section-wave--sns-top" data-placeholder="PND-003" aria-hidden="true"></div>
+      <div class="container section__inner section__inner--center">
+        <h2 id="sns-heading" class="section__title heading-en section__title--light">SNS</h2>
+        <ul class="sns-list">
+          <li>
+            <a href="#" class="sns-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram（URL未設定）">
+              <img src="images/icons/icon-instagram.png" alt="Instagram" class="sns-link__icon" width="48" height="48">
+            </a>
+          </li>
+          <li>
+            <a href="#" class="sns-link" target="_blank" rel="noopener noreferrer" aria-label="TikTok（URL未設定）">
+              <img src="images/icons/icon-tiktok.png" alt="TikTok" class="sns-link__icon" width="48" height="48">
+            </a>
+          </li>
+          <li>
+            <a href="#" class="sns-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook（URL未設定）">
+              <img src="images/icons/icon-facebook.png" alt="Facebook" class="sns-link__icon" width="48" height="48">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PENDING:PND-006 -->
+    <section id="contact" class="section section--contact" aria-labelledby="contact-heading">
+      <div class="container section__inner section__inner--center">
+        <h2 id="contact-heading" class="section__title heading-en">Contact</h2>
+        <p class="section__lead">お問い合わせは Google フォームよりお願いします。</p>
+        <p class="section__cta">
+          <!-- href は PND-006 で差し替え -->
+          <a href="#" class="btn btn--primary btn-contact" target="_blank" rel="noopener noreferrer" data-placeholder="PND-006">お問い合わせはこちら</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="site-footer">
+    <div class="container site-footer__inner">
+      <p class="site-footer__org">学生団体 カラクリ</p>
+      <nav class="site-footer__nav" aria-label="フッターナビ">
+        <a href="#about">About</a>
+        <a href="news/index.html">News</a>
+        <a href="member/index.html">Member</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <p><small>&copy; Karakuri</small></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/hero.js" defer></script>
+  <script src="js/news.js" defer></script>
+</body>
+</html>

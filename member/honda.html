@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="学生団体カラクリ メンバー紹介">
+  <meta name="format-detection" content="telephone=no">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="学生団体カラクリ">
+  <meta property="og:title" content="Message | カラクリ">
+  <meta property="og:description" content="学生団体カラクリ メンバー個人ページ">
+  <meta property="og:url" content="https://example.com/member/honda.html">
+  <meta property="og:image" content="https://example.com/images/ogp.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Message | カラクリ">
+  <meta name="twitter:description" content="学生団体カラクリ メンバー個人ページ">
+  <meta name="twitter:image" content="https://example.com/images/ogp.png">
+  <title>Message | カラクリ</title>
+  <link rel="icon" href="../images/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="site-header" id="site-header">
+    <div class="container site-header__inner">
+      <a href="../index.html" class="site-header__logo">カラクリ</a>
+      <button type="button" class="site-header__menu-btn" data-menu-toggle aria-controls="site-nav" aria-expanded="false" aria-label="メニューを開く">
+        <span class="site-header__menu-label" data-menu-label-open>MENU</span>
+        <span class="site-header__menu-label site-header__menu-label--close" data-menu-label-close hidden>CLOSE</span>
+      </button>
+    </div>
+  </header>
+
+  <nav id="site-nav" class="site-nav" data-site-nav aria-label="メインメニュー" hidden>
+    <div class="site-nav__inner">
+      <ul class="site-nav__decor" data-placeholder="PND-009" aria-hidden="true">
+        <li class="site-nav__star site-nav__star--red"></li>
+        <li class="site-nav__star site-nav__star--yellow"></li>
+        <li class="site-nav__star site-nav__star--blue"></li>
+        <li class="site-nav__star site-nav__star--red2"></li>
+      </ul>
+      <ul class="site-nav__links">
+        <li><a href="../index.html#about" class="site-nav__link">About</a></li>
+        <li><a href="../news/index.html" class="site-nav__link">News</a></li>
+        <li><a href="index.html" class="site-nav__link">Member</a></li>
+        <li><a href="../index.html#contact" class="site-nav__link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main" class="page-main container">
+    <h1 class="page-main__title heading-en">Message</h1>
+    <article class="member-message">
+      <header class="member-message__header">
+        <figure class="member-message__avatar-wrap">
+          <img
+            src="../images/member/demo.jpg"
+            alt="本田 晴喜"
+            class="member-message__avatar"
+            data-placeholder="PND-011"
+            loading="lazy"
+            width="420"
+            height="420"
+          >
+        </figure>
+        <p class="member-message__role" data-placeholder="PND-012">代表</p>
+        <h2 class="member-message__name" data-placeholder="PND-012">本田 晴喜</h2>
+      </header>
+
+      <section class="member-message__body" aria-labelledby="message-heading">
+        <h3 id="message-heading" class="member-message__section-title heading-en">Message</h3>
+        <p data-placeholder="PND-012">
+          仮テキスト：うまくいかないことがあっても、まずはやってみる。
+          小さな一歩を重ねていくことで、まちでの活動は少しずつ面白くなると考えています。
+        </p>
+        <p data-placeholder="PND-012">
+          仮テキスト：カラクリでは、メンバーそれぞれの興味と得意を活かして、
+          企画や発信をチームで形にしています。これからも仲間と挑戦を続けていきます。
+        </p>
+      </section>
+
+      <section class="member-profile" aria-labelledby="profile-heading">
+        <h3 id="profile-heading" class="member-profile__title heading-en">Profile</h3>
+        <dl class="member-profile__list">
+          <dt>名前</dt>
+          <dd data-placeholder="PND-012">本田 晴喜</dd>
+          <dt>所属</dt>
+          <dd data-placeholder="PND-012">カラクリ代表</dd>
+          <dt>興味分野</dt>
+          <dd data-placeholder="PND-012">まちづくり / デザイン / 企画運営</dd>
+          <dt>ひとこと</dt>
+          <dd data-placeholder="PND-012">まずは、動いてみる。</dd>
+        </dl>
+      </section>
+    </article>
+    <p class="page-back"><a href="index.html">メンバー一覧へ</a></p>
+  </main>
+
+  <footer class="site-footer" id="site-footer">
+    <div class="container site-footer__inner">
+      <p class="site-footer__org">学生団体 カラクリ</p>
+      <nav class="site-footer__nav" aria-label="フッターナビ">
+        <a href="../index.html#about">About</a>
+        <a href="../news/index.html">News</a>
+        <a href="index.html">Member</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+      <p><small>&copy; Karakuri</small></p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js" defer></script>
+</body>
+</html>
