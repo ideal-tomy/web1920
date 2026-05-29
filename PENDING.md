@@ -2,6 +2,8 @@
 
 仮実装のまま進めた箇所を、**本番素材・確定値へ差し替える作業**をここに追記していく。
 
+**現在のフェーズ**: Phase 6（クライアント確認・本番素材投入）。確認の進め方は [CLIENT_REVIEW.md](./CLIENT_REVIEW.md)、全体の流れは [INSTRUCTIONS.md](./INSTRUCTIONS.md) §12・§15。
+
 ---
 
 ## 運用ルール
@@ -50,6 +52,7 @@
 | PND-007 | open | 文案・ダミーテキスト → クライアント原稿 | `index.html` |
 | PND-008 | open | SNS リンク URL 仮（`#`）→ 実アカウント | `index.html` |
 | PND-009 | open | メニュー周辺ブロブ（CSS 仮）→ XD 書き出し | 全 HTML の `.site-nav__blobs` |
+| PND-014 | done | メニュー象限イラスト（仮 CSS）→ PNG 4 枚 | 全 HTML `.site-nav__illus`, `images/icons/*menu.png` |
 | PND-011 | open | メンバー写真（`demo.jpg` 仮）→ 本番写真へ差し替え | `member/index.html`, `member/honda.html`, `images/member/demo.jpg` |
 | PND-012 | open | メンバー名簿・肩書・本文仮 → 確定原稿 | `member/index.html`, `member/honda.html` |
 | PND-013 | open | OGP URL / OGP画像 / favicon 仮 → 本番ドメイン反映 | 全 HTML head, `images/ogp.png`, `images/favicon.png` |
@@ -263,14 +266,7 @@
 | 本番の内容 | XD メニュー画面の周辺装飾ブロブ |
 | 関連ファイル | 全ページの `nav.site-nav`、`.site-nav__blobs` |
 
-**メニュー象限イラスト（適用済み）**
-
-| 位置 | ファイル |
-|------|----------|
-| 左上 News | `images/icons/newsmenu.png` |
-| 右上 Member | `images/icons/membermenu.png` |
-| 左下 About | `images/icons/aboutmenu.png` |
-| 右下 Contact | `images/icons/contactmenu.png` |
+※ **象限イラスト 4 枚は PND-014 で完了**。本項目は周辺ブロブのみ。
 
 #### 差し替え手順（ブロブのみ）
 
@@ -280,7 +276,36 @@
 
 #### 確認方法
 
-- メニューを開き、4 象限のイラストと周辺ブロブが XD と一致すること。
+- メニューを開き、周辺ブロブが XD と一致すること（4 象限イラストは PND-014 参照）。
+
+---
+
+### PND-014: メニュー象限イラスト（仮 CSS → PNG 4 枚）
+
+| 項目 | 内容 |
+|------|------|
+| ステータス | `done` |
+| 追加日 | 2026-05-29 |
+| 完了日 | 2026-05-29 |
+| 仮の内容 | CSS `::before` 等による仮図形 |
+| 本番の内容 | 下記 PNG を各象限に表示 |
+| 関連ファイル | 全 HTML の `.site-nav__grid`、`images/icons/` |
+
+| 位置 | ファイル |
+|------|----------|
+| 左上 News | `images/icons/newsmenu.png` |
+| 右上 Member | `images/icons/membermenu.png` |
+| 左下 About | `images/icons/aboutmenu.png` |
+| 右下 Contact | `images/icons/contactmenu.png` |
+
+#### 差し替え手順
+
+（完了）全ページの `<img class="site-nav__illus">` に差し替え済み。差し替え時はファイル名を維持するか、HTML の `src` を更新。
+
+#### 確認方法
+
+- MENU 開閉で 2×2 各セルにイラストが表示されること。
+- ファイルサイズが大きい場合は圧縮版への差し替えを検討（CLIENT_REVIEW §7）。
 
 ---
 
