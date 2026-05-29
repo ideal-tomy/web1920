@@ -9,9 +9,11 @@
   var nav = document.querySelector("[data-site-nav]");
   if (!toggle || !nav) return;
 
-  var navLinks = nav.querySelectorAll(".site-nav__link");
+  var navLinks = nav.querySelectorAll(".site-nav__cell");
   var labelOpen = toggle.querySelector("[data-menu-label-open]");
   var labelClose = toggle.querySelector("[data-menu-label-close]");
+  var iconOpen = toggle.querySelector("[data-menu-icon-open]");
+  var iconClose = toggle.querySelector("[data-menu-icon-close]");
   var lastFocused = null;
 
   function isOpen() {
@@ -26,7 +28,7 @@
     if (open) {
       nav.removeAttribute("hidden");
       lastFocused = document.activeElement;
-      var firstLink = nav.querySelector(".site-nav__link");
+      var firstLink = nav.querySelector(".site-nav__cell");
       if (firstLink) firstLink.focus();
     } else {
       nav.setAttribute("hidden", "");
@@ -38,6 +40,11 @@
     if (labelOpen && labelClose) {
       labelOpen.hidden = open;
       labelClose.hidden = !open;
+    }
+
+    if (iconOpen && iconClose) {
+      iconOpen.hidden = open;
+      iconClose.hidden = !open;
     }
   }
 

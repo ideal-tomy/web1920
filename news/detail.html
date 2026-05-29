@@ -28,6 +28,10 @@
     <div class="container site-header__inner">
       <a href="../index.html" class="site-header__logo">カラクリ</a>
       <button type="button" class="site-header__menu-btn" data-menu-toggle aria-controls="site-nav" aria-expanded="false" aria-label="メニューを開く">
+        <span class="site-header__menu-icon" data-menu-icon-open aria-hidden="true">
+          <span></span><span></span><span></span>
+        </span>
+        <span class="site-header__menu-close-icon" data-menu-icon-close hidden aria-hidden="true">&times;</span>
         <span class="site-header__menu-label" data-menu-label-open>MENU</span>
         <span class="site-header__menu-label site-header__menu-label--close" data-menu-label-close hidden>CLOSE</span>
       </button>
@@ -35,19 +39,42 @@
   </header>
 
   <nav id="site-nav" class="site-nav" data-site-nav aria-label="メインメニュー" hidden>
-    <div class="site-nav__inner">
-      <ul class="site-nav__decor" data-placeholder="PND-009" aria-hidden="true">
-        <li class="site-nav__star site-nav__star--red"></li>
-        <li class="site-nav__star site-nav__star--yellow"></li>
-        <li class="site-nav__star site-nav__star--blue"></li>
-        <li class="site-nav__star site-nav__star--red2"></li>
-      </ul>
-      <ul class="site-nav__links">
-        <li><a href="../index.html#about" class="site-nav__link">About</a></li>
-        <li><a href="index.html" class="site-nav__link">News</a></li>
-        <li><a href="../member/index.html" class="site-nav__link">Member</a></li>
-        <li><a href="../index.html#contact" class="site-nav__link">Contact</a></li>
-      </ul>
+    <div class="site-nav__blobs" data-placeholder="PND-009" aria-hidden="true">
+      <span class="site-nav__blob site-nav__blob--yellow site-nav__blob--pos-1"></span>
+      <span class="site-nav__blob site-nav__blob--blue site-nav__blob--pos-2"></span>
+      <span class="site-nav__blob site-nav__blob--red site-nav__blob--pos-3"></span>
+      <span class="site-nav__blob site-nav__blob--yellow site-nav__blob--pos-4"></span>
+      <span class="site-nav__blob site-nav__blob--blue site-nav__blob--pos-5"></span>
+    </div>
+    <div class="site-nav__grid">
+      <a href="index.html" class="site-nav__cell site-nav__cell--news">
+        <img src="../images/icons/newsmenu.png" alt="" class="site-nav__illus" width="340" height="280" decoding="async">
+        <span class="site-nav__cell-action">
+          <span class="site-nav__chevron" aria-hidden="true"></span>
+          <span class="site-nav__label">News</span>
+        </span>
+      </a>
+      <a href="../member/index.html" class="site-nav__cell site-nav__cell--member">
+        <img src="../images/icons/membermenu.png" alt="" class="site-nav__illus" width="340" height="280" decoding="async">
+        <span class="site-nav__cell-action">
+          <span class="site-nav__chevron" aria-hidden="true"></span>
+          <span class="site-nav__label">Member</span>
+        </span>
+      </a>
+      <a href="../index.html#about" class="site-nav__cell site-nav__cell--about">
+        <img src="../images/icons/aboutmenu.png" alt="" class="site-nav__illus" width="340" height="280" decoding="async">
+        <span class="site-nav__cell-action">
+          <span class="site-nav__chevron" aria-hidden="true"></span>
+          <span class="site-nav__label">About</span>
+        </span>
+      </a>
+      <a href="../index.html#contact" class="site-nav__cell site-nav__cell--contact">
+        <img src="../images/icons/contactmenu.png" alt="" class="site-nav__illus" width="340" height="280" decoding="async">
+        <span class="site-nav__cell-action">
+          <span class="site-nav__chevron" aria-hidden="true"></span>
+          <span class="site-nav__label">Contact</span>
+        </span>
+      </a>
     </div>
   </nav>
 

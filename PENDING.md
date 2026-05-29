@@ -49,7 +49,7 @@
 | PND-006 | open | Contact ボタン URL 仮 → Google フォーム | `index.html` |
 | PND-007 | open | 文案・ダミーテキスト → クライアント原稿 | `index.html` |
 | PND-008 | open | SNS リンク URL 仮（`#`）→ 実アカウント | `index.html` |
-| PND-009 | open | メニュー装飾星（CSS 仮）→ XD 書き出し | 全 HTML の `.site-nav__decor` |
+| PND-009 | open | メニュー周辺ブロブ（CSS 仮）→ XD 書き出し | 全 HTML の `.site-nav__blobs` |
 | PND-011 | open | メンバー写真（`demo.jpg` 仮）→ 本番写真へ差し替え | `member/index.html`, `member/honda.html`, `images/member/demo.jpg` |
 | PND-012 | open | メンバー名簿・肩書・本文仮 → 確定原稿 | `member/index.html`, `member/honda.html` |
 | PND-013 | open | OGP URL / OGP画像 / favicon 仮 → 本番ドメイン反映 | 全 HTML head, `images/ogp.png`, `images/favicon.png` |
@@ -252,27 +252,35 @@
 
 ---
 
-### PND-009: メニュー装飾星（CSS 仮 → XD 書き出し）
+### PND-009: メニュー周辺ブロブ（CSS 仮 → XD 書き出し）
 
 | 項目 | 内容 |
 |------|------|
 | ステータス | `open` |
 | 追加日 | 2026-05-29 |
 | 完了日 | — |
-| 仮の内容 | `.site-nav__star` の CSS `clip-path` 星形（赤・黄・青） |
-| 本番の内容 | XD メニュー画面の星型アイコン SVG（4 つ） |
-| 関連ファイル | 全ページの `nav.site-nav` 内 `.site-nav__decor` |
+| 仮の内容 | `.site-nav__blobs` 内の円形 CSS ブロブ |
+| 本番の内容 | XD メニュー画面の周辺装飾ブロブ |
+| 関連ファイル | 全ページの `nav.site-nav`、`.site-nav__blobs` |
 
-#### 差し替え手順
+**メニュー象限イラスト（適用済み）**
 
-1. XD のメニュー（押下先）から星アイコンを `images/icons/menu-star-*.svg` 等で書き出す。
-2. 各 `<li class="site-nav__star">` を `<li><img src="…" alt="" width="48" height="48"></li>` に置換（装飾なので `alt=""`）。
-3. `.site-nav__star--*` の背景色・`clip-path` 用 CSS を削除。
-4. `data-placeholder="PND-009"` を親 `ul` から削除。
+| 位置 | ファイル |
+|------|----------|
+| 左上 News | `images/icons/newsmenu.png` |
+| 右上 Member | `images/icons/membermenu.png` |
+| 左下 About | `images/icons/aboutmenu.png` |
+| 右下 Contact | `images/icons/contactmenu.png` |
+
+#### 差し替え手順（ブロブのみ）
+
+1. XD のメニュー画面から周辺ブロブを `images/menu/` 等に書き出す。
+2. `.site-nav__blobs` 内の `<span class="site-nav__blob">` を `<img>` に差し替え、仮 CSS を削除。
+3. `data-placeholder="PND-009"` を `.site-nav__blobs` から削除。
 
 #### 確認方法
 
-- メニューを開き、XD の MENU 画面と星の見た目が一致すること。
+- メニューを開き、4 象限のイラストと周辺ブロブが XD と一致すること。
 
 ---
 
